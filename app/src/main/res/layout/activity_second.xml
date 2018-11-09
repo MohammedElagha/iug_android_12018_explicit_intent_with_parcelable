@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="ID"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="30sp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="@+id/id_label"
+        app:layout_constraintTop_toBottomOf="@+id/id_label" />
+
+
+    <TextView
+        android:id="@+id/gpa_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA"
+        android:textSize="30sp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="@+id/name_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+    <TextView
+        android:id="@+id/id_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/id_label"
+        app:layout_constraintTop_toTopOf="@+id/id_label" />
+
+
+    <TextView
+        android:id="@+id/name_val"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/id_val"
+        app:layout_constraintTop_toTopOf="@+id/name_label" />
+
+
+    <TextView
+        android:id="@+id/gpa_val"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/name_val"
+        app:layout_constraintTop_toTopOf="@+id/gpa_label" />
+
+
+</android.support.constraint.ConstraintLayout>
