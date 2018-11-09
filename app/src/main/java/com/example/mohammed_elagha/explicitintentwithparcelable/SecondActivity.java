@@ -28,6 +28,11 @@ public class SecondActivity extends AppCompatActivity {
         if(intent.hasExtra("student")) {
             Student student = (Student) intent.getParcelableExtra("student");
 
+            /*
+            // You can receive ArrayList of Parcelable objects
+            ArrayList<Student> students = intent.getParcelableArrayListExtra("students");
+             */
+
             String idValText = String.valueOf(student.getId());
             String nameValText = student.getName();
             String gpaValText = String.valueOf(student.getGpa());

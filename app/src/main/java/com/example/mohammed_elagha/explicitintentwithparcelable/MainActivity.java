@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                     intent.putExtra("student", student);
+
+                    /*
+                    // You can use ArrayList of Parcelable objects
+                    ArrayList<Student> students = new ArrayList();
+                    students.add(student1);
+                    students.add(student2);
+                    intent.putParcelableArrayListExtra("students", students);
+                     */
+
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "One or More EditText is/are Empty", Toast.LENGTH_SHORT).show();
